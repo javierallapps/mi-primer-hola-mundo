@@ -1,22 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Hola Mundo en Azure</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Alta de Estudiante</title>
     <style>
+        /* Estilos CSS básicos para mejorar la apariencia */
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 50px;
-            background-color: #f4f4f4;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            color: #0078d4; /* Color azul de Azure */
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="date"],
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+        }
+        .form-group button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-<h1>¡Hola Mundo de Javier! Desplegado automáticamente en Azure</h1>
-<h1>Mama soy paquito</h1>
-<p>¡Felicidades! Esta página está corriendo en la nube de Microsoft Azure.</p>
-</body>
-</html>
+<div class="container">
+    <h1>Registro de Nuevo Estudiante 🎓</h1>
+    <form action="#" method="POST">
+        <div class="form-group">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="Ej. 5512345678" title="Diez dígitos numéricos" required>
+        </div>
+
+        <hr>
+
+        <div class="form-group">
+            <label for="matricula">Número de Matrícula (Generado):</label>
+            <input type="text" id="matricula" name="matricula" value="PENDIENTE" readonly>
+        </div>
+        <div class="form-group">
+            <label for="programa">Programa de Estudios:</label>
+            <select id="programa" name="programa" required>
+                <option value="">Selecciona un programa</option>
+                <option value="ingenieria-sistemas">Ingeniería en Sistemas</option>
+                <option value="licenciatura-derecho">Licenciatura en Derecho</option>
+                <option value="medicina">Medicina</option>
+                <option value="arquitectura">Arquitectura</option>
+                <option value="administracion">Administración de Empresas</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="semestre">Semestre de Ingreso:</label>
+            <select id="semestre" name="semestre" required>
+                <option value="">Selecciona</option>
+                <option value="1">1ro</option>
+                <option value="2">2do</option>
+                <option value="3">3ro</option>
+                <option value="4">4to</option>
+            </select>
+        </div>
+
+        <hr>
+
+        <div class="form-group">
+            <button type="submit">Dar de Alta Estudiante</button>
+        </div>
+    </form>
+</div>
