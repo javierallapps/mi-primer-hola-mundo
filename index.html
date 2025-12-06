@@ -3,115 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Alta de Estudiante</title>
-    <style>
-        /* Estilos CSS básicos para mejorar la apariencia */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #555;
-        }
-        .form-group input[type="text"],
-        .form-group input[type="email"],
-        .form-group input[type="date"],
-        .form-group select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
-        }
-        .form-group button {
-            background-color: #007bff;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            width: 100%;
-        }
-        .form-group button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <title>La IA y el Futuro de la Programación: ¿Amigo o Rival? - Tech Insights Javier</title>
 </head>
 <body>
-<div class="container">
-    <h1>Registro de Nuevo Estudiante 🎓</h1>
-    <form action="#" method="POST">
-        <div class="form-group">
-            <label for="nombre">Nombre Completo:</label>
-            <input type="text" id="nombre" name="nombre" required>
-        </div>
-        <div class="form-group">
-            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
-            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="telefono">Teléfono:</label>
-            <input type="text" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="Ej. 5512345678" title="Diez dígitos numéricos" required>
+
+<header>
+    <h1>Tech Insights</h1>
+    <p>Análisis Profundo del Mundo Digital</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="categorias.html">Categorías</a></li>
+            <li><a href="acerca.html">Acerca de</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <h2>La IA y el Futuro de la Programación: ¿Amigo o Rival?</h2>
+        <p class="meta">
+            Publicado por **Ana Dev** el 4 de Diciembre de 2025 |
+            Categoría: <a href="categoria-ia.html">Inteligencia Artificial</a> |
+            Tiempo de Lectura: 7 minutos
+        </p>
+
+        <figure>
+            <img src="img/ia_coding_banner.jpg" alt="Un desarrollador humano colaborando con un robot programador" width="800">
+            <figcaption>La colaboración entre el humano y la máquina define el nuevo paradigma de desarrollo.</figcaption>
+        </figure>
+
+        <section id="introduccion">
+            <h3>El Cambio de Paradigma</h3>
+            <p>La **Inteligencia Artificial (IA)** ha dejado de ser una promesa futurista para convertirse en una herramienta diaria en la caja de herramientas del desarrollador. Desde la corrección de sintaxis hasta la generación de bloques de código complejos, modelos como GitHub Copilot y ChatGPT están redefiniendo lo que significa programar.</p>
+        </section>
+
+        <section id="ventajas">
+            <h3>Ventajas de la Asistencia de IA</h3>
+            <p>Las principales ventajas que hemos observado en los equipos que adoptan estas tecnologías incluyen:</p>
+            <ul>
+                <li>**Aceleración de Prototipos:** La IA permite crear *boilerplates* y funciones base mucho más rápido.</li>
+                <li>**Reducción de Errores Comunes:** Ayuda a prevenir errores de tipado o de sintaxis que consumen tiempo.</li>
+                <li>**Aprendizaje Rápido:** Permite a los desarrolladores junior entender patrones de código rápidamente.</li>
+            </ul>
+        </section>
+
+        <section id="codigo-ejemplo">
+            <h3>Ejemplo: Generación de una Función en JavaScript</h3>
+            <p>La IA puede generar instantáneamente una función de ordenamiento como esta:</p>
+            <pre><code>
+function sortArrayBy(array, key) {
+  return array.sort((a, b) => {
+    if (a[key] < b[key]) return -1;
+    if (a[key] > b[key]) return 1;
+    return 0;
+  });
+}
+                </code></pre>
+        </section>
+
+        <section id="conclusion">
+            <h3>Conclusión: El Rol del Desarrollador</h3>
+            <p>La IA no está aquí para reemplazar al desarrollador, sino para aumentar su capacidad. El futuro del programador será menos sobre escribir código línea por línea y más sobre **diseñar arquitecturas, validar la lógica y depurar la IA**. Es hora de adaptarnos y usar estas herramientas para enfocarnos en los problemas más complejos y creativos.</p>
+        </section>
+
+        <div class="tags">
+            Etiquetas:
+            <a href="tag.html#ia">#IA</a>,
+            <a href="tag.html#programacion">#Programación</a>,
+            <a href="tag.html#futurodeltrabajo">#FuturoDelTrabajo</a>
         </div>
 
         <hr>
 
-        <div class="form-group">
-            <label for="matricula">Número de Matrícula (Generado):</label>
-            <input type="text" id="matricula" name="matricula" value="PENDIENTE" readonly>
-        </div>
-        <div class="form-group">
-            <label for="programa">Programa de Estudios:</label>
-            <select id="programa" name="programa" required>
-                <option value="">Selecciona un programa</option>
-                <option value="ingenieria-sistemas">Ingeniería en Sistemas</option>
-                <option value="licenciatura-derecho">Licenciatura en Derecho</option>
-                <option value="medicina">Medicina</option>
-                <option value="arquitectura">Arquitectura</option>
-                <option value="administracion">Administración de Empresas</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="semestre">Semestre de Ingreso:</label>
-            <select id="semestre" name="semestre" required>
-                <option value="">Selecciona</option>
-                <option value="1">1ro</option>
-                <option value="2">2do</option>
-                <option value="3">3ro</option>
-                <option value="4">4to</option>
-            </select>
-        </div>
+    </article>
 
-        <hr>
+    <section id="comentarios">
+        <h3>Deja tu Comentario</h3>
+        <p>El sistema de comentarios estará disponible pronto o integrado con un servicio serverless.</p>
+    </section>
 
-        <div class="form-group">
-            <button type="submit">Dar de Alta Estudiante</button>
-        </div>
-    </form>
-</div>
+    <p><a href="index.html">← Volver a la página principal</a></p>
+</main>
+
+<footer>
+    <p>&copy; 2025 Tech Insights. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
